@@ -3,12 +3,13 @@
   padding: 16px;
   overflow: auto;
   line-height: 1.45;
-  background-color: #f7f7f7;
+  background-color: rgb(30,30,30);
   border-radius: 4px;
-  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font: 14px Consolas, "Liberation Mono", Menlo, Courier, monospace;
   margin: 0 0 16px 0;
 }
 
+li code,
 p code {  
   padding: 0.4em 0.6em;
   margin: 0;
@@ -20,15 +21,15 @@ p code {
 .highlight .c { color: #969896 } /* Comment */
 .highlight .err { color: #93A1A1 } /* Error */
 .highlight .g { color: #93A1A1 } /* Generic */
-.highlight .k { color: #a71d5d } /* Keyword */
+.highlight .k { color: rgb(1,113,224) } /* Keyword */
 .highlight .l { color: #93A1A1 } /* Literal */
-.highlight .n { color: #333 } /* Name */
+.highlight .n { color: rgb(220,220,220) } /* Name */
 .highlight .o { color: #a71d5d } /* Operator */
 .highlight .x { color: #CB4B16 } /* Other */
-.highlight .p { color: #93A1A1 } /* Punctuation */
+.highlight .p { color: rgb(220,220,220) } /* Punctuation */
 .highlight .cm { color: #969896 } /* Comment.Multiline */
 .highlight .cp { color: #a71d5d } /* Comment.Preproc */
-.highlight .c1 { color: #969896 } /* Comment.Single */
+.highlight .c1 { color: rgb(0,128,0) } /* Comment.Single */
 .highlight .cs { color: #a71d5d } /* Comment.Special */
 .highlight .gd { color: #0086b3 } /* Generic.Deleted */
 .highlight .ge { color: #93A1A1; font-style: italic } /* Generic.Emph */
