@@ -5,18 +5,17 @@
   font-size: 85%;
   line-height: 1.45;
   background-color: #f7f7f7;
-  border-radius: 3px;
+  border-radius: 4px;
   font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  margin: 0 0 16px 0;
 }
 
 p code {  
-  padding: 0;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
+  padding: 0.4em 0.6em;
   margin: 0;
   font-size: 85%;
   background-color: rgba(0,0,0,0.04);
-  border-radius: 3px;
+  border-radius: 4px;
 }
 
 .highlight .c { color: #969896 } /* Comment */
