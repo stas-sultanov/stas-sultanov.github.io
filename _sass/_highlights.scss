@@ -9,8 +9,14 @@
   font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
-code {
-  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+code {  
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
 }
 
 .highlight .c { color: #969896 } /* Comment */
@@ -18,7 +24,7 @@ code {
 .highlight .g { color: #93A1A1 } /* Generic */
 .highlight .k { color: #a71d5d } /* Keyword */
 .highlight .l { color: #93A1A1 } /* Literal */
-.highlight .n { color: #93A1A1 } /* Name */
+.highlight .n { color: #333 } /* Name */
 .highlight .o { color: #a71d5d } /* Operator */
 .highlight .x { color: #CB4B16 } /* Other */
 .highlight .p { color: #93A1A1 } /* Punctuation */
