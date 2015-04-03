@@ -9,6 +9,12 @@
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
+hr {
+  border: 1px solid #888;
+  border-top: none;
+  margin: 20px auto;
+}
+
 /**************/
 /* BASE RULES */
 /**************/
