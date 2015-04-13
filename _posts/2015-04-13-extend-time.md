@@ -9,6 +9,7 @@ While .NET has several types to work with time, there are times when these types
 So lets introduce a new type that represents a time unit.
 
 ```C#
+[CLSCompliant(false)]
 public enum TimeUnit : long
 {
 	Microsecond = 10L,
@@ -36,14 +37,14 @@ public static DateTime Add(this DateTime value, TimeUnit timeUnit)
 public static DateTime Subtract(this DateTime value, TimeUnit timeUnit)
 
 /// <summary>
-/// Returns the smallest <see cref="DateTime"/> value that is greater than
-/// or equal to the specified <paramref name="value"/> within the specified <paramref name="timeUnit"/>.
+/// Returns the smallest <see cref="DateTime"/> value that is greater than or equal to
+/// the specified <paramref name="value"/> within the specified <paramref name="timeUnit"/>.
 /// </summary>
 public static DateTime Ceiling(this DateTime value, TimeUnit timeUnit)
 
 /// <summary>
-/// Returns the largest <see cref="DateTime"/> that less than
-/// or equal to the specified <paramref name="value"/> within the specified <paramref name="timeUnit"/>.
+/// Returns the largest <see cref="DateTime"/> that less than or equal to
+/// the specified <paramref name="value"/> within the specified <paramref name="timeUnit"/>.
 /// </summary>
 public static DateTime Floor(this DateTime value, TimeUnit timeUnit)
 ```
