@@ -4,9 +4,9 @@ layout: post
 
 While .NET has several types to work with time, there are times when these types are not very handy to use.
 
-TimeSpan
+`TimeSpan` represents a time interval it ticks. In most cases it's fine but when you are working with, for example, reports you are dealing with time units like days, hours, minutes. And it becames not handy to work with time units by using `TimeSpan`
 
-The type that represents a time unit.
+So lets introduce a new type that represents a time unit.
 
 ```C#
 public enum TimeUnit : long
@@ -20,7 +20,9 @@ public enum TimeUnit : long
 }
 ```
 
-The set of extensions methods that allow
+As you can see this is an enumeration of available fixed time units, where value of the item of the enumeration equals to count of ticks that it represents. As mentioned befour this is #Fixed# time units and it appears that it is imposible to add such time units as `Month` and `Year` becaus count of days in month and year may differ.
+
+The set of extensions methods that allows `TimeUnit` to work with `DateTime`
 
 ```C#
 /// <summary>
