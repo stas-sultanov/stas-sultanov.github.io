@@ -21,6 +21,7 @@ The type that represents a time unit.
 ```
 
 The set of extensions methods that allow
+
 ```C#
 		/// <summary>
 		/// Adds <paramref name="timeUnit"/> to the <paramref name="value"/>.
