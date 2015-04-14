@@ -6,10 +6,9 @@ While .NET has several types to work with time, there are times when these types
 
 `TimeSpan` represents a time interval it ticks. In most cases it's fine but when you are working with, for example, reports you are dealing with time units like days, hours, minutes. And it becames not handy to work with time units by using `TimeSpan`
 
-So lets introduce a new type that represents a time unit.
+So let's introduce the new enumeration which represents the time units.
 
 ```C#
-[CLSCompliant(false)]
 public enum TimeUnit : long
 {
 	Microsecond = 10L,
@@ -21,7 +20,8 @@ public enum TimeUnit : long
 }
 ```
 
-As you can see this is an enumeration of available fixed time units, where value of the item of the enumeration equals to count of ticks that it represents. As mentioned befour this is #Fixed# time units and it appears that it is imposible to add such time units as `Month` and `Year` becaus count of days in month and year may differ.
+As you can see, each item in enumeration has value that equals to the number of ticks in the time unit that it represents.
+Unfortunately it is impossible to describe such time units as `Month` and `Year` because count of ticks in different months differs.
 
 The set of extensions methods that allows `TimeUnit` to work with `DateTime`
 
