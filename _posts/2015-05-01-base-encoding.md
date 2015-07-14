@@ -2,17 +2,36 @@
 layout: post
 ---
 
-There are times when comes a need to convert some data to base-n encoding.
+This post will cover functionality of the ``` BaseEncoding ``` class.
 
-##Base-N encodings:
-in order of
-* [Base85](https://en.wikipedia.org/wiki/Ascii85)
-* [Base64](https://en.wikipedia.org/wiki/Base64)
-* [Base32](https://en.wikipedia.org/wiki/Base32)
+##BaseEncoding class
+Provides functionality to encode and decode data using BaseN encoding.
+Uses lookup tables to speedup decoding of the data.
+Supports following encodings:
+
+* [Base64](https://en.wikipedia.org/wiki/Base64): Lex, MIME, URL
+* [Base32](https://en.wikipedia.org/wiki/Base32): Crockford, Hex
 * Base-16
 
-Unfortunately the **Tester-Doer** pattern has several issues:
+Supports writing of custom encodings.
 
-#####Issue #1
-The implicitly captured closure might occur.
-The following code will cause variable `temp` to be implicitly captured by the linq clause:
+#####Encode and decode
+
+```C#
+	class Program
+	{
+		static void Main(String[] args)
+		{
+			var initialData = Encoding.UTF8.GetBytes("some text");
+
+			var encodedData = Base64Encoding.Mime.Encode(initialData);
+
+			var decodedData = Base64Encoding.Mime.Decode(encodedData);
+
+			var actualData = Encoding.UTF8.GetString(decodedData);
+
+			Console.WriteLine("Encoded data: '{0}'\r\nDecoded data: '{1}'", encodedData, actualData);
+		}
+	}
+
+```
