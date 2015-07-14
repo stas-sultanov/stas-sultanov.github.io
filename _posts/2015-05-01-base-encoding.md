@@ -11,7 +11,7 @@ Supports following encodings:
 
 * [Base64](https://en.wikipedia.org/wiki/Base64): Lex, MIME, URL
 * [Base32](https://en.wikipedia.org/wiki/Base32): Crockford, Hex
-* Base-16
+* Base16
 
 Supports writing of custom encodings.
 
@@ -35,3 +35,7 @@ Supports writing of custom encodings.
 	}
 
 ```
+
+result will be the following:
+Encoded data: 'c29tZSB0ZXh0'
+Decoded data: 'some text'
