@@ -37,7 +37,10 @@ Supports writing of custom encodings.
 ```
 
 result will be the following:
+
+```
 Encoded data: 'c29tZSB0ZXh0'
 Decoded data: 'some text'
+```
 
 ----
