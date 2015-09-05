@@ -31,11 +31,11 @@ Supports writing of custom encodings.
 			// 2 decode data
 			var decodedData = Base64Encoding.Mime.Decode(encodedData);
 
-			// 3 get 
+			// 3 get string representation of the data
 			var actualData = Encoding.UTF8.GetString(decodedData);
 
 			// 3 write results
-			Console.WriteLine("Encoded data: '{0}'\r\nDecoded data: '{1}'", encodedData, actualData);
+			Console.WriteLine($"Encoded data: '{encodedData}'\r\nDecoded data: '{actualData}'");
 		}
 	}
 
