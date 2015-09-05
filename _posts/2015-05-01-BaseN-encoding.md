@@ -20,16 +20,21 @@ Supports writing of custom encodings.
 ```C#
 	class Program
 	{
-		static void Main(String[] args)
+		static void Main()
 		{
+			// 0 get some bytes to test
 			var initialData = Encoding.UTF8.GetBytes("some text");
 
+			// 1 encode data
 			var encodedData = Base64Encoding.Mime.Encode(initialData);
 
+			// 2 decode data
 			var decodedData = Base64Encoding.Mime.Decode(encodedData);
 
+			// 3 get 
 			var actualData = Encoding.UTF8.GetString(decodedData);
 
+			// 3 write results
 			Console.WriteLine("Encoded data: '{0}'\r\nDecoded data: '{1}'", encodedData, actualData);
 		}
 	}
